@@ -1,34 +1,30 @@
-# PT-Quaternionic-Cosmology-Colab
+# PT-Symmetric Quaternionic Spacetime — Reproducible Research
 
-This repository provides code and data for testing the PT-symmetric quaternionic spacetime model in cosmology. It includes two main analyses:
+This repository provides a **Colab-ready, fully reproducible implementation** of the models and numerical results presented in the paper:
 
-1. **SN Ia Data Fitting:**  
-   The Colab Notebook `SN_Ia_Fitting/pantheon_mcmc_colab.ipynb` demonstrates how to load the Pantheon SN Ia dataset, define the cosmological model (with an effective dark energy density parameter \(\Omega_{\mathrm{eff}}\)), and perform an MCMC analysis to obtain the distance-modulus vs. redshift plots and corner plots.
+> **“PT-Symmetric Quaternionic Spacetime: A Geometric Approach to Connecting General Relativity and Quantum Mechanics.”**
 
-2. **GW170817 Analysis:**  
-   The Colab Notebook `GW170817_Analysis/gw_speed_test_colab.ipynb` computes the relative deviation in gravitational-wave speed (\(\delta c_g/c\)) based on GW170817 and GRB170817A data.
+It includes:
+- Jupyter notebooks for all major results and plots,
+- a modular Python package `quaternionflux` with all key formulas,
+- and CI-tested reproducibility for long-term maintenance.
 
-## How to Use
+---
 
-You can run the notebooks directly in Google Colab:
-1. Click on the respective notebook files.
-2. Select **"Open in Colab"** (a button can be added via a link in the README).
-3. Follow the instructions in the notebook to execute the code.
+## 🚀 Interactive Notebooks on Colab
 
-## Repository Structure
+Each notebook corresponds to a major section of the paper:
 
-- **data/**: Contains the Pantheon SN Ia data file `lcparam_full_long_zhel.txt`.
-- **SN_Ia_Fitting/**:
-  - `pantheon_mcmc.py`: Original Python script for SN Ia data fitting (optional).
-  - `pantheon_mcmc_colab.ipynb`: Colab Notebook for SN Ia data fitting.
-- **GW170817_Analysis/**:
-  - `gw_speed_test.py`: Original Python script for GW170817 analysis (optional).
-  - `gw_speed_test_colab.ipynb`: Colab Notebook for GW170817 analysis.
-- **docs/**: Contains additional documentation such as `Paper_Explanation.md`.
+| Section / Topic | Launch on Colab |
+|------------------|------------------|
+| 3.1 Cosmology — Pantheon SN Ia MCMC fit | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-org/pt-quaternionic-flux/blob/main/colab_notebooks/01_pantheon_sn_fit.ipynb) |
+| 3.2 Galaxies — SPARC rotation curve fitting | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-org/pt-quaternionic-flux/blob/main/colab_notebooks/02_sparc_rotation_curves.ipynb) |
+| Kerr spacetime flux simulation (Appx B + E) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-org/pt-quaternionic-flux/blob/main/colab_notebooks/03_kerr_flux_sim.ipynb) |
+| CMS missing transverse energy (MET) analysis | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-org/pt-quaternionic-flux/blob/main/colab_notebooks/04_cms_met_analysis.ipynb) |
+| Grid scan demo for Hubble tension test | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-org/pt-quaternionic-flux/blob/main/colab_notebooks/05_hubble_grid_scan.ipynb) |
 
-## Dependencies
-
-The notebooks are set up to install any necessary packages automatically in the Colab environment. No additional setup is required.
+> **Note**: To save Colab GPU quota, select **“None”** for the hardware accelerator under  
+> *Runtime → Change runtime type* before running.
 
 ## License
 
